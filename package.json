@@ -1,0 +1,43 @@
+{
+  "name": "puppeteer-cloak",
+  "version": "1.0.0",
+  "description": "Secure your puppeteer for scraping",
+  "main": "index.js",
+  "scripts": {
+    "cover": "nyc --reporter=html --reporter=text mocha test/**/*.spec.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint src --fix",
+    "test": "mocha --reporter spec test/**/*.spec.js",
+    "preversion": "npm run lint && npm test && npm run cover",
+    "prepublishOnly": "npm version patch && git push --tags && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavlealeksic/puppeteer-cloak.git"
+  },
+  "keywords": [
+    "npm",
+    "puppeteer",
+    "security",
+    "nodejs",
+    "stealth",
+    "detection-evasion",
+    "scraping",
+    "crawler",
+    "chrome",
+    "headless"
+  ],
+  "author": "Pavle Aleksic <pavlealeksic@live.com> (https://twitter.com/aleksicpaja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brencon/puppeteer-cloak/issues"
+  },
+  "homepage": "https://github.com/brencon/puppeteer-cloak#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
+  }
+}
