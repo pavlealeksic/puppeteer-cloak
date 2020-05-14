@@ -4,11 +4,9 @@
   "description": "Secure your puppeteer for scraping",
   "main": "index.js",
   "scripts": {
-    "cover": "nyc --reporter=html --reporter=text mocha test/**/*.spec.js",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint src --fix",
     "test": "mocha --reporter spec test/**/*.spec.js",
-    "preversion": "npm run lint && npm test && npm run cover",
+    "preversion": "npm run lint",
     "prepublishOnly": "npm version patch && git push --tags && git push"
   },
   "repository": {
