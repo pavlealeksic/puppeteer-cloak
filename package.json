@@ -23,7 +23,9 @@
     "scraping",
     "crawler",
     "chrome",
-    "headless"
+    "headless",
+    "scraping",
+    "browser automation"
   ],
   "author": "Pavle Aleksic <pavlealeksic@live.com> (https://twitter.com/aleksicpaja)",
   "license": "MIT",
