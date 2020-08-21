@@ -28,9 +28,9 @@
   "author": "Pavle Aleksic <pavlealeksic@live.com> (https://twitter.com/aleksicpaja)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brencon/puppeteer-cloak/issues"
+    "url": "https://github.com/pavlealeksic/puppeteer-cloak/issues"
   },
-  "homepage": "https://github.com/brencon/puppeteer-cloak#readme",
+  "homepage": "https://github.com/pavlealeksic/puppeteer-cloak#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.3",

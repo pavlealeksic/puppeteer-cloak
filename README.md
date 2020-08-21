@@ -1,5 +1,5 @@
 # puppeteer-cloak
-Use this project to hide your puppeteer page from anti scraping or anti bot tests
+Use this project to protect your puppeteer page from anti scraping or anti bot tests
 
 ## Installation
 
@@ -11,6 +11,7 @@ npm install puppeteer-cloak
 ## Usage
 
 ```js
+const puppeteer = require('puppeteer');
 const puppeteerCloak = require('puppeteer-cloak');
 
 const browser = await puppeteer.launch();

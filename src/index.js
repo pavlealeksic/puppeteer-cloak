@@ -6,7 +6,9 @@
  */
 module.exports = function(page) {
   page.evaluateOnNewDocument(() => {
-    Object.defineProperty(navigator, 'webdriver', {get: () => false, });
+    Object.defineProperty(navigator, 'webdriver', {
+      get: () => undefined, 
+    });
     Object.defineProperty(window, 'onbeforeunload', {
       configurable: false,
       writeable: false,
